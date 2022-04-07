@@ -29,7 +29,7 @@ function EmpReim(){
 }
 return(
     <div className="wrapper">
-      <h1>How About Them Apples</h1>
+      <h1>Please enter your Information Below:</h1>
       {submitting &&
         <div>
           You are submitting the following:
@@ -43,28 +43,17 @@ return(
       <form onSubmit={handleSubmit}>
         <fieldset>
           <label>
-            <p>First Name:</p>
-            <input name="name" onChange={handleChange}/>
+            <p>Author:</p>
+            <input name="REIMB_AUTHOR" onChange={handleChange}/>
           </label>
         </fieldset>
         <fieldset>
          <label>
-           <p>Last Name:</p>
-           <input name="name" onChange={handleChange}/>
-               
-         </label>
-         <label>
-           <p>Email</p>
-           <input type="email" name="email" onChange={handleChange} />
-         </label>
-         <label>
-           <p>Password</p>
-           <input type="password" name="password" onChange={handleChange} />
-         </label>
-         <label>
-           <p>Confirm Password</p>
-           <input type="confirmPassword" name="confirmPassword" onChange={handleChange} />
-         </label>
+           <p>Amount to be Reimbursed:</p>
+           <input name="REIMB_AMOUNT$" onChange={handleChange}/>
+           </label>
+      
+         
        </fieldset>
         <button type="submit">Submit</button>
       </form>
