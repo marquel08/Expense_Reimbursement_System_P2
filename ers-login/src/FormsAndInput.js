@@ -28,8 +28,9 @@ function EmpReim(){
     });
 }
 return(
+    <div className="outer" >
     <div className="wrapper">
-      <h1>Please enter your Information Below:</h1>
+      <h3 >Please enter your Information Below:</h3>
       {submitting &&
         <div>
           You are submitting the following:
@@ -41,26 +42,24 @@ return(
         </div>
       }
       <form onSubmit={handleSubmit}>
-        <fieldset>
+        <fieldset class="fieldset-auto-width">
           <label>
             <p>Author:</p>
-            <input name="REIMB_AUTHOR" onChange={handleChange}/>
+            <input className="inputbox" name="REIMB_AUTHOR" onChange={handleChange}/>
           </label>
-        </fieldset>
-        <fieldset>
+       {/*  </fieldset>
+        <fieldset class="fieldset-auto-width"> */}
          <label>
            <p>Amount to be Reimbursed:</p>
            <input name="REIMB_AMOUNT$" onChange={handleChange}/>
            </label>
-      
-         
-       </fieldset>
-        <button type="submit">Submit</button>
-      </form>
-    </div>
-  )
-    }
-export default EmpReim;
+           <div className="center"> <button className="btn" type="submit">Submit</button></div>
+           </fieldset>
+           </form>
+           </div>
+           </div>
+             )
+}export default EmpReim;
 
 
 
