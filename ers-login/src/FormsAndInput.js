@@ -22,43 +22,55 @@ function EmpReim(){
     }
     const handleChange = event => {
         setFormData({
-        fname: event.target.fname,
+        name: event.target.name,
         value: event.target.value,
-         lname: event.target.lname,
-          value: event.target.value,
+        
     });
 }
 return(
-    <div className='wrapper'>
-        <h1>Please fill out the Below form for Reimbursments</h1>
-        {submitting && <div>You are Submitting the Following Information:
-            <ul>
-                {Object.entries(formData).map(([fname, value]) => (
-                    <li key={fname}><strong>{fname}</strong>:{value.toString()}</li>
-                    
-                ))}
-            </ul>
-           
+    <div className="wrapper">
+      <h1>How About Them Apples</h1>
+      {submitting &&
+        <div>
+          You are submitting the following:
+          <ul>
+            {Object.entries(formData).map(([name, value]) => (
+              <li key={name}><strong>{name}</strong>: {value.toString()}</li>
+            ))}
+          </ul>
         </div>
-        }
-        <form onSubmit={handleSubmit}>
-            <fieldset>
-                <label>
-                    <p>First Name</p>
-                    <input fname="fname" onChange={handleChange}value={formData.fname } />
-                </label>
-                <label>
-                    <p>Last Name</p>
-                    <input lname="lname" onChange={handleChange} value={formData.lname }/>
-                </label>
-            </fieldset>
-
-
-            <button type="submit">Submit</button>
-        </form>
+      }
+      <form onSubmit={handleSubmit}>
+        <fieldset>
+          <label>
+            <p>First Name:</p>
+            <input name="name" onChange={handleChange}/>
+          </label>
+        </fieldset>
+        <fieldset>
+         <label>
+           <p>Last Name:</p>
+           <input name="name" onChange={handleChange}/>
+               
+         </label>
+         <label>
+           <p>Email</p>
+           <input type="email" name="email" onChange={handleChange} />
+         </label>
+         <label>
+           <p>Password</p>
+           <input type="password" name="password" onChange={handleChange} />
+         </label>
+         <label>
+           <p>Confirm Password</p>
+           <input type="confirmPassword" name="confirmPassword" onChange={handleChange} />
+         </label>
+       </fieldset>
+        <button type="submit">Submit</button>
+      </form>
     </div>
-)
-}
+  )
+    }
 export default EmpReim;
 
 
