@@ -21,8 +21,11 @@ function EmpReim(){
         }, 3000)
     }
     const handleChange = event => {
-        setFormData({fname: event.target.fname,
-        value: event.target.value, lname: event.target.lname, value: event.target.value,
+        setFormData({
+        fname: event.target.fname,
+        value: event.target.value,
+         lname: event.target.lname,
+          value: event.target.value,
     });
 }
 return(
@@ -35,12 +38,7 @@ return(
                     
                 ))}
             </ul>
-            <ul>
-                {Object.entries(formData).map(([lname, value]) => (
-                    <li key={lname}><strong>{lname}</strong>:{value.toString()}</li>
-                    
-                ))}
-            </ul>
+           
         </div>
         }
         <form onSubmit={handleSubmit}>
