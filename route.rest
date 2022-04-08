@@ -1,0 +1,20 @@
+GET http://localhost:3000/ers
+
+###
+
+GET http://localhost:3000/ers/624fd706e9f0a250690b13d2
+
+
+###
+
+POST http://localhost:3000/ers
+Content-Type: application/json
+
+{
+    "reimTypeId": "1001",
+    "reimType": "Food"
+}
+
+###
+
+DELETE http://localhost:3000/ers/624fd706e9f0a250690b13d2
