@@ -1,0 +1,32 @@
+.wrapper{
+  padding: 5px 20px;
+  background: coral;
+  width: 400px;
+  height: 300px;
+}
+.wrapper feildset {
+  margin: 20px 0;
+
+}
+.outer{
+  margin-left: 600px;
+  margin-top: 150px;
+}
+h3{
+  color: #ffffff;
+  text-align: center;
+  margin-block: 5px;
+}
+.btn{
+  background-color: blue;
+  color:#ffffff;
+
+}
+p {
+  color:#ffffff;
+}
+.center{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
