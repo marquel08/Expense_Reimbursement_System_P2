@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>ERS</title>
+    <link rel="shortcut icon" type="image/jpg" href="images/Favicon.jpeg"/>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.
+    /ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet"> <link href="css/cart.css" rel="stylesheet" />
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="css/navbar.css" rel="stylesheet">
+    <link href="css/signin.css" rel="stylesheet">    
+    <style>
+      .bg { 
+        background: url("images/bg.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+    </style>
+    <script>
+      function storeAndGo(){
+          var strCustomer = document.getElementById("username").value;
+          sessionStorage.setItem("userName", strCustomer);
+          location.href="index.html";
+      }
+      
+    </script>
+    </head>
+    <body class="bg">
+    <!--Nav-->
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">ERS.com</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav me-auto mb-2 mb-md-0">
+            <li class="nav-item">
+              <a class="nav-link" href="collectables.html">Collectables</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pending.html">Pending Reimbursement</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="apparel.html">Apparel</a>
+            </li>
+			</ul>
+          </div>
+
+        <!--SignIn and Cart Nav-->
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+			  <li class="nav-item">
+              <a class="nav-link" href="index.html">Sign In</a>
+            </li>
+          </li>
+          <li class="nav-item cart">
+            <a class="nav-link" href="cart.html"><ion-icon name="basket">
+            </ion-icon>Cart<span> 0 </span></a>
+          </li>
+              
+       
+            <li class="nav-item">
+              <a class="nav-link" href="dashboard.html">Admin</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+    <div class="container">
+      <main class="form-signin">
+        <!--form-->
+      <form id="reg-form" class="needs-validation" novalidate>
+        
+          <img class="mb-4" src="images/logo.png" alt="" width="288" height="248">
+            <h4 class="h3 mb-3 fw-normal"><strong>Register</strong></h4>
+
+              <div class="col-12">
+                <label for="username" class="form-label">Username</label>
+
+                 <!---username-->
+                <div class="input-group has-validation">
+                  <input type="text" class="form-control" autocomplete="off" id="username" placeholder="Username" required>
+                  <div class="invalid-feedback">
+                    Your username is required.
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-12">
+                <label for="password" class="form-label">Password</label>
+                <div class="input-group has-validation">
+
+                   <!---password-->
+                <input type="text" class="form-control" autocomplete="off" id="password" placeholder="Password" value="" required>
+                <div class="invalid-feedback">
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12">
+              <!--submit-->
+              <input type="button" value="Submit" class="w-100 btn btn-primary btn-lg"
+              onclick="storeAndGo();">
+          </div>
+        </form>
+     <script src="js/register.js"></script>
+      </main>
+          <footer class="my-5 pt-5 text-muted text-center text-small">
+              <p class="mb-1">&copy; 2022 ERS</p>
+             <ul class="list-inline">
+               <li class="list-inline-item"><a href="#">Privacy</a></li>
+                <li class="list-inline-item"><a href="#">Terms</a></li>
+                <li class="list-inline-item"><a href="#">Support</a></li>
+             </ul>
+           </footer>
+           <script src="js/main.js"></script>
+             <script src="js/bootstrap.bundle.min.js"></script>
+   
+           <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+      </div>
+    </body>
+  </html>
