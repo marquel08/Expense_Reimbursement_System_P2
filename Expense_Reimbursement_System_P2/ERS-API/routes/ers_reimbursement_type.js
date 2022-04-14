@@ -1,7 +1,7 @@
 const express = require('express')
-const { update } = require('../models/ersSchema')
+const { update } = require('../models/ers_reimbursment_typeSchema')
 const router = express.Router()
-const Er = require('../models/ersSchema')
+const Er = require('../models/ers_reimbursment_typeSchema')
 
 // getting all
 router.get('/', async (req, res) => {
