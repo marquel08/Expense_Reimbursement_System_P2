@@ -1,15 +1,25 @@
 import React from 'react';
-import { Admin, Resource } from 'ersadmin';
 import logo from './logo.svg';
 import './App.css';
-import EmployeeList from './components/EmployeeList';
+import Graph from './components/Graph';
+import Form from './components/Form';
+
 
 function App() {
   return (
-    <Admin dataProvider={lb4Provider('http:/localhost:')}>
-    <Resource name='Employees'  list={EmployeeList} />
-    <Resource name='Reimbursements' list={ReimburseList} />
-    </Admin>
+    <div className="App">
+      <div className="container mx-auto max-w-6xl text-center drop-shadow-lg text-gray-800">
+      <h1 className="text-4xl py-8 mb-10 bg-slate-800 text-white rounded">Expense Reimbursement Tracker</h1>
+      
+      {/* grid columns */}
+      <div className="grid md:grid-cols-2 gap-4">
+      {/* Chart */}
+      <Graph></Graph>
+      {/* Form */}
+      <Form></Form>
+      </div>
+      </div>
+    </div>
   );
 }
 
