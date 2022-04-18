@@ -1,6 +1,9 @@
 .approve {
     text-align: center;
 }
+.deny {
+    text-align: center;
+}
 button.disabled {
     padding: 10px 20px;
     font-size: 18px;
