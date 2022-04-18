@@ -1,0 +1,23 @@
+
+///all ers data
+GET http://localhost:3000/ers
+
+###
+///one ers data by id
+GET http://localhost:3000/ers/625285d0b4175c151e82970e
+
+###
+///add one new ers data
+POST http://localhost:3000/ers
+Content-Type: application/json
+
+
+###
+///deletes ers data by Id
+DELETE http://localhost:3000/ers/625289a394f8736fc1964a21
+
+###
+///update ers data by Id
+PATCH  http://localhost:3000/ers/625289bd820aa9211bc46fc1
+Content-Type: application/json
+
