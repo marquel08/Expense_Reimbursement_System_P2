@@ -3,7 +3,7 @@ const model = require('../models/model');
 //  post: http://localhost:8080/api/ers_reimbursement_type
 async function create_Ers_reimbursement_type(req, res){
    const Create = new model.Ers_reimbursement_type({
-       type: "Investment",
+       type: "Food",
        color: "#FCBE44"
    })
 

@@ -11,7 +11,7 @@ const ers_reimbursement_type_model =new Schema({
 // Ers_reimbursement  => field => ['name', 'type', 'amount', 'date']
 const ers_reimbursement_model = new Schema({
     name: { type : String, default:"Anonymous"},
-    type: { type : String, default:"Investment"},
+    type: { type : String, default:"Food"},
     amount: { type : Number},
     date: { type : Date, default : Date.now}
 })
