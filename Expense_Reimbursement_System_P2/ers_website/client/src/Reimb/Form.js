@@ -7,6 +7,7 @@ export default function Form() {
 
     const {register, handleSubmit, resetField} = useForm();
     
+    
     const onSubmit=(data)=>{
         console.log(data)
 
@@ -29,7 +30,11 @@ export default function Form() {
         },
       
       };
+      function refreshPage() {
+        window.location.reload(false);
+      }
   return (
+   
     <div className="form max-w-sm mx-auto w-96">
         
         <h1 className='font-bold pb-4 text-xl'>Enter info here</h1>
@@ -47,8 +52,10 @@ export default function Form() {
                 <div className="input-group">
                     <input type="text" {...register('amount')} placeholder='Amount' className='form-input' />
                 </div>
+
                 <div className="submit-btn">
-                <Link to="/thanks" type="submit" className="btn btn-dark btn-lg btn-block">Submit Reimbursement</Link>
+                <button onClick={refreshPage} className='btn btn-light btn-lg btn-block mb-3'>Add Reimbursement</button>
+                <Link to="/thanks" type="submit" className="btn btn-light btn-lg btn-block">Submit Reimbursement</Link>
 
                 </div>
             </div>    
@@ -56,5 +63,6 @@ export default function Form() {
 
         <List></List>
     </div>
+  
   )
 }

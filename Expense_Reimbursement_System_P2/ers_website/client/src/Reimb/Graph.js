@@ -3,7 +3,7 @@ import { Doughnut } from 'react-chartjs-2';
 import {Chart, ArcElement} from 'chart.js'
 import Labels from './Labels';
 import Form from './Form';
-import './Reimb.css';
+
 
 Chart.register(ArcElement);
 
@@ -32,14 +32,15 @@ export default function Graph() {
  
 
   return (
-    
+   
     <div  className="flex justify-content max-w-xs mx-auto">
       
         <div className="item">
+        <h1>Reimbursement Form</h1>
             <div className="chart relative">
                <Doughnut{...config}></Doughnut>
                 <h3 className='mb-4 font-bold title'>Total
-                    <span className='block text-3xl text-emerald-400'>${0}</span>
+                    <span className='block text-3xl text-emerald-400'>${100}</span>
                 </h3>
             </div>   
 
@@ -50,7 +51,7 @@ export default function Graph() {
             <Form ></Form>
         </div>
     </div>
-  
+ 
 
   )
 }

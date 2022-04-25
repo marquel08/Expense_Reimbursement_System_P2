@@ -3,26 +3,26 @@
       "id": 1001,
       "fullName": "Donald Lopez",
       "type": "Food",
-      "reimbursement": "50.00",
-      "detail": "Ihop"
+      "reimbursement": "100.00",
+      "detail": "Sushi"
     },
     {
       "id": 1002,
-      "fullName": "Jessica warren",
+      "fullName": "Caitlin Cassidy",
       "type": "Travel",
       "reimbursement": "175.00",
       "detail": "Plane ticket"
     },
     {
       "id": 1003,
-      "fullName": "Tony Frank",
+      "fullName": "Marquel Ellis",
       "type": "Lodging",
       "reimbursement": "85.00",
       "detail": "Motel"
     },
     {
       "id": 1004,
-      "fullName": "Jeremy Clark",
+      "fullName": "Desiree Steffen",
       "type": "Food",
       "reimbursement": "60.00",
       "detail": "Olive Garden"

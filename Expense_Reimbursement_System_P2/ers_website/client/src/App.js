@@ -20,7 +20,7 @@ function App() {
     <div className="App ">
       <nav className=" navbar navbar-expand-md navbar-dark bg-dark fixed-top">
         <div className="container-fluid ">
-          <Link className="navbar-brand" to={"/sign-in"}>ERS</Link>
+          <Link className="navbar-brand" to={"/sign-in"}> <img src="./img/ERS.png" width="90" height="90" alt=""></img></Link>
              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
