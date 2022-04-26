@@ -16,7 +16,7 @@ const ReadOnlyRow = ({ contact, handleEditClick, handleDeleteClick }) => {
         
         </button>
         <button className="btn btn-dark btn-lg btn-block" type="button" onClick={() => handleDeleteClick(contact.id)}>
-          Aprove
+          Approve
         </button>
         <button className="btn btn-dark btn-lg btn-block" type="button" onClick={() => handleDeleteClick(contact.id)}>
           Deny
