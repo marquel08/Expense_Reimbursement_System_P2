@@ -58,7 +58,7 @@ Finance managers are authorized to approve and deny requests for expense reimbur
   <li>JavaScript</li>
   <li>HTML/CSS</li>
   <li>React</li>
-  <li>Node.js</li><li>JavaScript</li>
+  <li>Node.js</li>
   <li>Express</li>
   <li>AWS SDK</li>
   <li>DynamoDB</li>
